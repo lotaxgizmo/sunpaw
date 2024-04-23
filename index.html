@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIPPOSOL</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="app/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="app/dist/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="./styles.css">  
+    <link rel="stylesheet" href="app/dist/app.css">
+    <link href="app/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- end Styles -->
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.ico">
+
+  
+    <style>
+        .noto {
+   
+            font-family: "Noto Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    color: white !important;
+   
+ }
+      </style>
+
+
+
+<style>
+    /* Modal styles */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: none;
+        padding: 20px;
+        border-radius: 8px;
+        width: d;
+        /* height: 90vh; */
+    }
+
+    @media (min-width: 768px) {
+    .modal-content {
+        width: 80%; /* This will set the width to 80% on screens wider than 768px */
+    }
+}
+</style>
+
+
+<style>
+    .comingsoon { 
+    height: 90vh !important;
+    border-radius: 40px;
+    }
+
+
+    .flexerr {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    margin-top: 32px !important;
+}
+</style>
+</head>
+<body class="home-nft header-fixed flexedd" data-magic-cursor="show">
+    <div class="loaded overfloww">
+        <!-- Preloading -->
+        <div class="preloader overfloww">
+         <div class=" loaderr overfloww">
+             <div class=" rotating-object  ">
+                 <img src="assets/images/minifav.png" class="mb-10d" style="margin-bottdom: 100px;" alt="HIPPOSOL">
+             </div>
+               
+         </div>
+     </div> 
+     <!-- End Preloading -->
+     
+  </div>
+ 
+
+  <div class="content overfloww">
+ <!-- MAGIC CURSOR -->
+ <div class="mouse-cursor cursor-outer"></div>
+ <div class="mouse-cursor cursor-inner"></div>
+<!-- /MAGIC CURSOR -->
+
+<!-- Header -->
+<header id="header_main" class="header">
+ <div class="container">
+     <div class="row">
+         <div class="col-12">
+             <div class="header__body">
+                 <div class="header__logo">
+                     <a href="https://www.hipposol.xyz/">
+                         <img id="site-logo" style="width: 50px; height: 50px;" src="assets/images/favicon.png"
+                         alt="$Hippos" width="165" height="40"
+                         data-retina="assets/images/logo-main@x2.png" data-width="165"
+                         data-height="40">
+                     </a>
+                 </div>
+
+                 <div class="header__right">
+                     <nav id="main-nav" class="main-nav">
+                         <ul id="menu-primary-menu" class="menu">
+                             <li class="menu-item menu-item-has-childrenn current-menu-item">
+                                 <a class="manekin zen" href="https://www.hipposol.xyz/">Home</a>
+                                 
+                             </li>
+
+                             <li class="menu-item menu-item-has-childrenn">
+                                 <a class="manekin zen" href="/#About">About</a>
+                                 
+                             </li>
+
+                             <li class="menu-item menu-item-has-childrenn">
+                                 <a class="manekin zen" href="/#sales">Tokenomics</a>
+                                 
+                             </li>
+                              
+                             <li class="menu-item menu-item-has-childrenn">
+                                <a class="manekin zen" href="#" onclick="openModal()">BUY $Hippos</a>
+                                 <!-- <a class="manekin zen" href="./presale">BUY $Hippos</a> -->
+                                  
+                             </li>
+                             <li class="menu-item menu-item-has-childrenn">
+                                 <a class="manekin zen" href="/#FAQ">FAQ</a>
+                               
+                             </li>
+                         </ul>
+                     </nav>
+                     <div class="group-button">
+                         
+                         <!-- <a href="#" class="btn-action-outline style-1">
+                             <span>EN</span>
+                         </a>
+                         <a class="btn-action style-2" href="#">
+                             <span>Login</span>
+                         </a> -->
+                     </div>
+                     <div class="mobile-button"><span></span></div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</header>
+<!-- end Header -->
+
+<!-- Banner Top -->
+<section class="banner-top style-2">
+ <div class="container">
+     <div class="row">
+         <div class="col-xl-6 col-md-12">
+             <div class="banner-top__content">
+                 <h2 class="title ">Welcome to Hipposol <span>Your Memetastic Hippopotamus</span> on Solana!</h2>
+                 <p class="desc noto">Hipposol is more than just a memecoin- it's a memetastic phenomenon revolutionizing the meme space, built on the secure and advanced Solana network. </p>
+                 <div class="button">
+                     <a href="#" onclick="openModal()" class="btn-action style-2"><span>Buy $Hippos</span></a>
+                     <!-- <a href="./presale" class="btn-action style-2"><span>Buy $Hippos</span></a> -->
+                 </div>
+
+                 <!-- <ul class="content-list">
+                     <li>
+                         <span class="icon-brute"></span>
+                         <h5>+128K</h5> 
+                         <p>Current Holders</p>
+                     </li>
+                     <li>
+                         <span class="icon-pegasus"></span>
+                         <h5>+2 mILLION</h5>
+                         <p>CryptoItem</p>
+                     </li>
+                     <li>
+                         <span class="icon-bear-face"></span>
+                         <h5>+3.000 USD</h5>
+                         <p>Total Volume</p>
+                     </li>
+                 </ul> -->
+             </div>
+         </div>
+         <div class="col-xl-6 col-md-12">
+             <div class="banner-top__sale bannerthing flexx">
+                 <!-- <img src="assets/images/banner01.png" alt="ICOLand"> -->
+                 <div class="class" style="width: 100vws; display: flex; align-items: center; justify-content: center;">
+                    <style>
+                        .imagee{
+                            margin-bottom: 186.5px; 
+                    width: 500px;
+                    @media (max-width: 768px) { width: 400px !important; }
+                        }
+                    </style>
+                    <img src="assets/images/favicon.png" class="mb-10 imagee" style="
+                   
+                      " alt="" 
+                    > 
+                 </div>
+                 <div class="sale-content">
+                     <h6>Token sale Starts In!</h6>
+
+                     <!-- <span class="js-countdown" data-timer="178250"></span> -->
+                     <div class="js-countdown" data-countdown="2024-04-24T10:00:00"></div>
+
+                 </div>
+                 <div class="flexerr">
+                     <a href="#" onclick="openModal()" class="btn-action style-2 ton"><span>Join Now!</span></a>
+                     <!-- <a href="./presale" class="btn-action style-2 ton"><span>Join Now!</span></a> -->
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</section>
+<!-- end Banner Top -->
+
+<!-- Section Features -->
+
+<section class="about style-3" id="About" >
+ <div class="container">
+     <div class="row">
+         <div class="col-xl-6 col-md-12">
+             <div class="about__video">
+                 <!-- <img src="assets/images/background/bg-video.jpg" alt="ICOLand"> -->
+                 <img src="assets/images/hippoo.png" alt="">
+                 <!-- <div class="wrap-video"> 
+                         <span class="icon-play"></span> 
+                 </div>   -->
+             </div>
+         </div>
+         <div class="col-xl-6 col-md-12">
+             <div class="about__content">
+                 <!-- <h6 class="sub-title">About us</h6> -->
+              <h3 class="heading zen">About HippoSol</h3>
+                 <p class="text noto ffont">
+                    Once upon a time in the vast digital savanna of the blockchain, there lived a sleepy, yet surprisingly savvy creature—the Hipposol. Unlike its real-world cousins who love water, this digital hippo thrived on the waves of the Solana blockchain, navigating the wild currents with ease and a cheeky grin.
+<br/><br/>
+                    One sunny crypto day, Hipposol stumbled upon a treasure trove of forgotten coins, left behind in the rush for the next big pump. With a wise nod to the meme gods, Hipposol thought, "Why not create a coin that's not just a meme but a movement?"
+                    <br/><br/>
+                    And so, $Hippos was born— a memecoin with a mission.
+                   
+
+                 </p>
+             </div>
+         </div>
+     </div>
+ </div>
+</section>
+
+
+<!-- End Section Features -->
+
+<!-- Section RoadMap -->
+<!-- <section class="road-map style-1" id="roadmap">
+ <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+             <div class="block-text" data-aos="fade-up" data-aos-duration="1000">
+                 <h3 class="heading">Roadmap</h3>
+                 <p>The most technologically advanced species will not stop any time soon...</p>
+             </div>
+
+             <div class="road-map__content">
+                 <div class="box-roadmap">
+                     <div class="box-roadmap__top">
+                         <h6><span>Level 01</span> - CyberKongz VX Launch </h6>
+                         <div class="shape active"></div>
+                     </div>
+                     <div class="box-roadmap__main">
+                         <div class="text"><p>The time for you to get your own CyberKongz VX as a custom playable Metaverse Avatar has finally arrived. CyberKongz VX are launched in partnership with The Sandbox and the integration as playable avatars into The Sandbox game is now in development.</p></div>
+                         <img src="assets/images/roadmap01.png" alt="ICOLand" data-aos="fade-down" data-aos-duration="1000">
+                     </div>
+                 </div>
+                 <div class="box-roadmap s2">
+                     <div class="box-roadmap__top">
+                         <h6><span>Level 02</span>  - Kongz Utility Expansion </h6>
+                         <div class="shape"></div>
+                     </div>
+                     <div class="box-roadmap__main">
+                         <div class="text"><p>The time for you to get your own CyberKongz VX as a custom playable Metaverse Avatar has finally arrived. CyberKongz VX are launched in partnership with The Sandbox and the integration as playable avatars into The Sandbox game is now in development.</p></div>
+                         <img src="assets/images/roadmap02.png" alt="ICOLand" data-aos="fade-down" data-aos-duration="1000">
+                     </div>
+                 </div>
+                 <div class="box-roadmap">
+                     <div class="box-roadmap__top">
+                         <h6><span>Level 03</span> - Kongz Island </h6>
+                         <div class="shape"></div>
+                     </div>
+                     <div class="box-roadmap__main">
+                         <div class="text"><p>The time for you to get your own CyberKongz VX as a custom playable Metaverse Avatar has finally arrived. CyberKongz VX are launched in partnership with The Sandbox and the integration as playable avatars into The Sandbox game is now in development.</p></div>
+                         <img src="assets/images/roadmap03.png" alt="ICOLand" data-aos="fade-down" data-aos-duration="1000">
+                     </div>
+                 </div>
+                 <div class="box-roadmap s2">
+                     <div class="box-roadmap__top">
+                         <h6><span>Level 04</span> - The Banana Shop</h6>
+                         <div class="shape"></div>
+                     </div>
+                     <div class="box-roadmap__main">
+                         <div class="text"><p>The time for you to get your own CyberKongz VX as a custom playable Metaverse Avatar has finally arrived. CyberKongz VX are launched in partnership with The Sandbox and the integration as playable avatars into The Sandbox game is now in development.</p></div>
+                         <img src="assets/images/roadmap04.png" alt="ICOLand" data-aos="fade-down" data-aos-duration="1000">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</section> -->
+<!-- end Section RoadMap -->
+
+<!-- Section Creation -->
+<!-- <section class="creation" id="creation">
+ <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+             <div class="block-text center" data-aos="fade-up" data-aos-duration="1000">
+                 <h3 class="title">Creation</h3>
+                 <p class="desc">The most technologically advanced species will not stop any time soon...</p>
+             </div>
+             <div class="creation__main">
+                 <div class="box-nft">
+                     <span class="icon-union-01"></span>
+                     <span class="icon-union-02"></span>
+                     <span class="icon-union-03"></span>
+                     <span class="icon-union-04"></span>
+                     <div class="box-nft__main">
+                         <a href="#"><img src="assets/images/nft-01.jpg" alt="ICOLand"></a>
+                         <div class="content">
+                             <a href="#" class="h4 title">NFT - Monkey</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="box-nft">
+                     <span class="icon-union-01"></span>
+                     <span class="icon-union-02"></span>
+                     <span class="icon-union-03"></span>
+                     <span class="icon-union-04"></span>
+                     <div class="box-nft__main">
+                         <a href="#"><img src="assets/images/nft-02.jpg" alt="ICOLand"></a>
+                         <div class="content">
+                             <a href="#" class="h4 title">NFT - Monkey</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="box-nft">
+                     <span class="icon-union-01"></span>
+                     <span class="icon-union-02"></span>
+                     <span class="icon-union-03"></span>
+                     <span class="icon-union-04"></span>
+                     <div class="box-nft__main">
+                         <a href="#"><img src="assets/images/nft-03.jpg" alt="ICOLand"></a>
+                         <div class="content">
+                             <a href="#" class="h4 title">NFT - Monkey</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="box-nft">
+                     <span class="icon-union-01"></span>
+                     <span class="icon-union-02"></span>
+                     <span class="icon-union-03"></span>
+                     <span class="icon-union-04"></span>
+                     <div class="box-nft__main">
+                         <a href="#"><img src="assets/images/nft-04.jpg" alt="ICOLand"></a>
+                         <div class="content">
+                             <a href="#" class="h4 title">NFT - Monkey</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="box-nft">
+                     <span class="icon-union-01"></span>
+                     <span class="icon-union-02"></span>
+                     <span class="icon-union-03"></span>
+                     <span class="icon-union-04"></span>
+                     <div class="box-nft__main">
+                         <a href="#"><img src="assets/images/nft-05.jpg" alt="ICOLand"></a>
+                         <div class="content">
+                             <a href="#" class="h4 title">NFT - Monkey</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</section> -->
+<!-- End Section Creation -->
+
+<!-- Section Document -->
+<!-- <section class="document style-1" id="document">
+ <div class="container">
+     <div class="row">
+         <div class="document__main">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="block-text center">
+                         <h3 class="heading ">Document</h3>
+                         <p class="desc">Download the whitepaper and learn about ICO Token, the unique ICO Crypto approach and the team/advisors.</p>
+                     </div>
+                 </div>
+                 <div class="col-md-12">
+                     <div class="document__content">
+                         <div class="box-document">
+                             <div class="content">
+                                 <h4 class="title">DISCLAIMER</h4>
+                                 <a href="#" class="icon">
+                                     <img src="assets/images/download.png" alt="ICOLand">
+                                 </a>
+                             </div>
+                         </div>
+                         <div class="box-document">
+                             <div class="content">
+                                 <h4 class="title">ONE PAPER</h4>
+                                 <a href="#" class="icon">
+                                     <img src="assets/images/download.png" alt="ICOLand">
+                                 </a>
+                             </div>
+                         </div>
+                         <div class="box-document">
+                             <div class="content">
+                                 <h4 class="title">PRIVACY POLICY</h4>
+                                 <a href="#" class="icon">
+                                     <img src="assets/images/download.png" alt="ICOLand">
+                                 </a>
+                             </div>
+                         </div>
+                         <div class="box-document">
+                             <div class="content">
+                                 <h4 class="title">TERM OF COIN SALES</h4>
+                                 <a href="#" class="icon">
+                                     <img src="assets/images/download.png" alt="ICOLand">
+                                  </a>
+
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</section> -->
+<!-- End Section Document -->
+
+<!-- Section Allocation & Funds Distribution -->
+<section class="allo-dist" id="sales">
+<div class="container">
+ <div class="row">
+     <div class="col-md-12">
+         <div class="block-text center">
+             <h3 class="heading style-1 zen">Token Allocation </h3>
+             <p class="mt-12 noto">Token Symbol - $Hippos</p>
+             <p class="mt-12 noto">Total Supply - 1,000,000,000</p>
+             <p class="mt-12 noto">Contract Address - muSPxwrp2MaoghiLXLosHLKgTaSUkbNirq88LUQk5mu</p>
+             <p class="mt-12 noto"></p>
+         </div>
+
+         <div class="allo-dist__main" data-aos="fade-up" data-aos-duration="800">
+             <div class="flat-tabs">
+                 <ul class="menu-tab">
+                     <li class="active"><h6 class="fs-16">Token Distribution</h6></li>
+                     <style>
+                        @media (min-width: 768px) {
+    .content-inner {
+        justify-content: space-between !important;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .content-inner {
+        justify-content: center !important;
+    }
+}
+                     </style>
+                     <!-- <li><h6 class="fs-16">Funding Allocation</h6></li> -->
+                 </ul>
+                 <div class="content-tab">
+                     <div class="content-inner">
+                         <div class="list-progress">
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Pre sale: 60%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s1" data-percentNumber="60"></div>
+                                 </div>
+                             </div>
+
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>DEX / CEX Listing: 25%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s2" data-percentNumber="30"></div>
+                                 </div>
+                             </div>
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Marketing: 10%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s4" data-percentNumber="10"></div>
+                                 </div>
+                             </div>
+                             
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Airdrop: 5%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s3" data-percentNumber="5"></div>
+                                 </div>
+                             </div>
+                             <!-- <div class="progress">
+                                 <div class="title">
+                                   <p>No Team Tokens</p>
+                                 </div>
+                                
+                             </div> -->
+                         </div>
+
+                         <div class="chart-bar">
+                             <canvas id="myChart1"></canvas>
+                         </div>
+
+                         <div class="list-progress right">
+                          
+                             
+                             <!-- <div class="progress">
+                                 <div class="title">
+                                   <p>Reserve: 10%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s4" data-percentNumber="10"></div>
+                                 </div>
+                             </div>
+
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Reserve: 10%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s5" data-percentNumber="10"></div>
+                                 </div>
+                             </div>
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Token Sale: 20%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s6" data-percentNumber="20"></div>
+                                 </div>
+                             </div> -->
+                         </div>
+                         
+                     </div>
+                     <div class="content-inner">
+                         <div class="list-progress">
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Liquidity Pool: 40%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s1" data-percentNumber="40"></div>
+                                 </div>
+                             </div>
+
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Marketing: 15%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s2" data-percentNumber="15"></div>
+                                 </div>
+                             </div>
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Partnerships: 10%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s3" data-percentNumber="10"></div>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="chart-bar">
+                             <canvas id="myChart2"></canvas>
+                         </div>
+
+                         <div class="list-progress right">
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>CEX Listing: 35%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s4" data-percentNumber="35"></div>
+                                 </div>
+                             </div>
+
+                             <!-- <div class="progress">
+                                 <div class="title">
+                                   <p>Reserve: 10%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s5" data-percentNumber="10"></div>
+                                 </div>
+                             </div>
+                             <div class="progress">
+                                 <div class="title">
+                                   <p>Token Sale: 20%</p>
+                                 </div>
+                                 <div class="barline">
+                                   <div class="countbar s6" data-percentNumber="20"></div>
+                                 </div>
+                             </div> -->
+                         </div>
+                         
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+</section>
+<!-- End Section Allocation & Funds Distribution -->
+
+
+
+
+<!-- 
+
+<section class="road-map style-7 bg-1d" id="Roadmap">
+<div class="container">
+ <div class="row">
+     <div class="col-md-12">
+         <div class="block-text center">
+             <h2 class="heading">ROADMAP</h2>
+             <p class="fs-20">We’re slowly transforming the website into the best place for beginners to learn about cryptocurrencies. </p>
+         </div>
+
+         
+     </div>
+ </div>
+</div>
+<div class="container-fluid">
+ <div class="row">
+     <div class="col-md-12">
+         <div class="road-map__main" data-aos="fade-up" data-aos-duration="1000">
+             <div class="swiper swiper-roadmap-7">
+                 <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                         <div class="box-roadmap top"> 
+                             <h5 class="title-box">Q1 2024</h5>
+                             <div class="icon"></div>
+                             <svg width="18" height="211" viewBox="0 0 18 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V0.995283L1 0.995283V0H0ZM0 2.98585V4.97641H1L1 2.98585H0ZM0 6.96698V8.95755H1V6.96698H0ZM0 10.9481V12.9387H1L1 10.9481H0ZM0 14.9292V16.9198H1L1 14.9292H0ZM0 18.9104V20.9009H1L1 18.9104H0ZM0 22.8915V24.8821H1L1 22.8915H0ZM0 26.8726V28.8632H1L1 26.8726H0ZM0 30.8538V32.8443H1L1 30.8538H0ZM0 34.8349V36.8255H1L1 34.8349H0ZM0 38.816V40.8066H1L1 38.816H0ZM0 42.7972L1.95773e-06 44.7877H1V42.7972H0ZM2.04474e-06 46.7783L2.13176e-06 48.7689H1L1 46.7783H2.04474e-06ZM2.21877e-06 50.7594L2.30578e-06 52.75H1V50.7594H2.21877e-06ZM2.39279e-06 54.7406L2.4798e-06 56.7311H1L1 54.7406H2.39279e-06ZM2.56681e-06 58.7217L2.65382e-06 60.7123H1V58.7217H2.56681e-06ZM2.74083e-06 62.7028L2.82784e-06 64.6934H1L1 62.7028H2.74083e-06ZM2.91485e-06 66.684L3.00186e-06 68.6745H1L1 66.684H2.91485e-06ZM3.08887e-06 70.6651L3.17588e-06 72.6556H1L1 70.6651H3.08887e-06ZM3.26289e-06 74.6462L3.3499e-06 76.6368H1L1 74.6462H3.26289e-06ZM3.43691e-06 78.6273L3.52392e-06 80.6179H1L1 78.6273H3.43691e-06ZM3.61093e-06 82.6085L3.69794e-06 84.599H1L1 82.6085H3.61093e-06ZM3.78495e-06 86.5896L3.87196e-06 88.5801H1V86.5896H3.78495e-06ZM3.95897e-06 90.5707L4.04598e-06 92.5613H1L1 90.5707H3.95897e-06ZM4.13299e-06 94.5518L4.22e-06 96.5424H1V94.5518H4.13299e-06ZM4.30701e-06 98.533L4.39402e-06 100.524H1L1 98.533H4.30701e-06ZM4.48103e-06 102.514L4.56804e-06 104.505H1V102.514H4.48103e-06ZM4.65505e-06 106.495L4.74206e-06 108.486H1L1 106.495H4.65505e-06ZM4.82907e-06 110.476L4.91608e-06 112.467H1V110.476H4.82907e-06ZM5.00309e-06 114.457L5.09011e-06 116.448H1.00001L1.00001 114.457H5.00309e-06ZM5.17711e-06 118.439L5.26413e-06 120.429H1.00001L1.00001 118.439H5.17711e-06ZM5.35114e-06 122.42L5.43815e-06 124.41H1.00001L1.00001 122.42H5.35114e-06ZM5.52516e-06 126.401L5.61217e-06 128.391H1.00001L1.00001 126.401H5.52516e-06ZM5.69918e-06 130.382L5.78619e-06 132.373H1.00001L1.00001 130.382H5.69918e-06ZM5.8732e-06 134.363L5.96021e-06 136.354H1.00001L1.00001 134.363H5.8732e-06ZM6.04722e-06 138.344L6.13423e-06 140.335H1.00001V138.344H6.04722e-06ZM6.22124e-06 142.325L6.30825e-06 144.316H1.00001L1.00001 142.325H6.22124e-06ZM6.39526e-06 146.307L6.48227e-06 148.297H1.00001V146.307H6.39526e-06ZM6.56928e-06 150.288L6.65629e-06 152.278H1.00001L1.00001 150.288H6.56928e-06ZM6.7433e-06 154.269L6.83032e-06 156.259H1.00001V154.269H6.7433e-06ZM6.91733e-06 158.25L7.00434e-06 160.241H1.00001L1.00001 158.25H6.91733e-06ZM7.09135e-06 162.231L7.17836e-06 164.222H1.00001L1.00001 162.231H7.09135e-06ZM7.26537e-06 166.212L7.35238e-06 168.203H1.00001L1.00001 166.212H7.26537e-06ZM7.43939e-06 170.193L7.5264e-06 172.184H1.00001L1.00001 170.193H7.43939e-06ZM7.61341e-06 174.175L7.70042e-06 176.165H1.00001L1.00001 174.175H7.61341e-06ZM7.78743e-06 178.156L7.87444e-06 180.146H1.00001L1.00001 178.156H7.78743e-06ZM7.96145e-06 182.137L8.04846e-06 184.127H1.00001L1.00001 182.137H7.96145e-06ZM8.13547e-06 186.118L8.22248e-06 188.109H1.00001L1.00001 186.118H8.13547e-06ZM8.3095e-06 190.099L8.39651e-06 192.09H1.00001V190.099H8.3095e-06ZM8.48352e-06 194.08L8.57053e-06 196.071H1.00001L1.00001 194.08H8.48352e-06ZM8.65754e-06 198.061L8.74455e-06 200.052H1.00001V198.061H8.65754e-06ZM8.83156e-06 202.042L8.91857e-06 204.033H1.00001L1.00001 202.042H8.83156e-06ZM9.00558e-06 206.024L9.09259e-06 208.014H1.00001V206.024H9.00558e-06ZM1.00001 210.005H0.9V210H0V211H0.9H1.00001V210.005ZM2.7 211H4.5V210H2.7V211ZM6.3 211H8.1V210H6.3V211ZM9.9 211H11.7V210H9.9V211ZM13.5 211H15.3V210H13.5V211ZM17.1 211H18V210H17.1V211Z" fill="white"/>
+                             </svg>
+                             <ul class="list">
+                                 <li><div class="dot"></div><p class="fs-17">SolMario Ideation</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">Platform Design</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">UX/UI Completion</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">WhitePaper Completion</p></li>
+                             </ul>
+                                 
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="box-roadmap bottom"> 
+                             <h5 class="title-box">Q2 2024</h5>
+                             <div class="icon"></div>
+                             <svg width="19" height="211" viewBox="0 0 19 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 211V210.005L0 210.005V211H1ZM1 208.014L1 206.024H0V208.014H1ZM1 204.033V202.042H0V204.033H1ZM1 200.052L1 198.061H0V200.052H1ZM1 196.071L1 194.08H0V196.071H1ZM1 192.09L1 190.099H0V192.09H1ZM1 188.108L1 186.118H0V188.108H1ZM1 184.127L1 182.137H0V184.127H1ZM1 180.146L1 178.156H0V180.146H1ZM1 176.165L1 174.175H0V176.165H1ZM1 172.184L1 170.193H0V172.184H1ZM1 168.203V166.212H1.95773e-06L0 168.203H1ZM1 164.222L1 162.231H2.13176e-06L2.04474e-06 164.222H1ZM1 160.241V158.25H2.30578e-06L2.21877e-06 160.241H1ZM1 156.259L1 154.269H2.4798e-06L2.39279e-06 156.259H1ZM1 152.278V150.288H2.65382e-06L2.56681e-06 152.278H1ZM1 148.297L1 146.307H2.82784e-06L2.74083e-06 148.297H1ZM1 144.316L1 142.325H3.00186e-06L2.91485e-06 144.316H1ZM1 140.335L1 138.344H3.17588e-06L3.08887e-06 140.335H1ZM1 136.354L1 134.363H3.3499e-06L3.26289e-06 136.354H1ZM1 132.373L1 130.382H3.52392e-06L3.43691e-06 132.373H1ZM1 128.392L1 126.401H3.69794e-06L3.61093e-06 128.392H1ZM1 124.41V122.42H3.87196e-06L3.78495e-06 124.41H1ZM1 120.429L1 118.439H4.04598e-06L3.95897e-06 120.429H1ZM1 116.448V114.458H4.22e-06L4.13299e-06 116.448H1ZM1 112.467L1 110.476H4.39402e-06L4.30701e-06 112.467H1ZM1 108.486V106.495H4.56804e-06L4.48103e-06 108.486H1ZM1 104.505L1 102.514H4.74206e-06L4.65505e-06 104.505H1ZM1 100.524V98.5331H4.91608e-06L4.82907e-06 100.524H1ZM1.00001 96.5425L1.00001 94.552H5.09011e-06L5.00309e-06 96.5425H1.00001ZM1.00001 92.5614L1.00001 90.5709H5.26413e-06L5.17711e-06 92.5614H1.00001ZM1.00001 88.5803L1.00001 86.5897H5.43815e-06L5.35114e-06 88.5803H1.00001ZM1.00001 84.5992L1.00001 82.6086H5.61217e-06L5.52516e-06 84.5992H1.00001ZM1.00001 80.618L1.00001 78.6275H5.78619e-06L5.69918e-06 80.618H1.00001ZM1.00001 76.6369L1.00001 74.6463H5.96021e-06L5.8732e-06 76.6369H1.00001ZM1.00001 72.6557V70.6652H6.13423e-06L6.04722e-06 72.6557H1.00001ZM1.00001 68.6746L1.00001 66.684H6.30825e-06L6.22124e-06 68.6746H1.00001ZM1.00001 64.6935V62.7029H6.48227e-06L6.39526e-06 64.6935H1.00001ZM1.00001 60.7123L1.00001 58.7218H6.65629e-06L6.56928e-06 60.7123H1.00001ZM1.00001 56.7312V54.7406H6.83032e-06L6.7433e-06 56.7312H1.00001ZM1.00001 52.75L1.00001 50.7595H7.00434e-06L6.91733e-06 52.75H1.00001ZM1.00001 48.7689L1.00001 46.7783H7.17836e-06L7.09135e-06 48.7689H1.00001ZM1.00001 44.7878L1.00001 42.7972H7.35238e-06L7.26537e-06 44.7878H1.00001ZM1.00001 40.8066L1.00001 38.8161H7.5264e-06L7.43939e-06 40.8066H1.00001ZM1.00001 36.8255L1.00001 34.8349H7.70042e-06L7.61341e-06 36.8255H1.00001ZM1.00001 32.8443L1.00001 30.8538H7.87444e-06L7.78743e-06 32.8443H1.00001ZM1.00001 28.8632L1.00001 26.8726H8.04846e-06L7.96145e-06 28.8632H1.00001ZM1.00001 24.8821L1.00001 22.8915H8.22248e-06L8.13547e-06 24.8821H1.00001ZM1.00001 20.9009V18.9104H8.39651e-06L8.3095e-06 20.9009H1.00001ZM1.00001 16.9198L1.00001 14.9292H8.57053e-06L8.48352e-06 16.9198H1.00001ZM1.00001 12.9386V10.9481H8.74455e-06L8.65754e-06 12.9386H1.00001ZM1.00001 8.9575L1.00001 6.96693H8.91857e-06L8.83156e-06 8.9575H1.00001ZM1.00001 4.97636V2.98579H9.09259e-06L9.00558e-06 4.97636H1.00001ZM9.1796e-06 0.995224H1.00001L1 1H1.9V0H1.00001H9.2231e-06L9.1796e-06 0.995224ZM3.7 0H5.5V1H3.7V0ZM7.3 0H9.1V1H7.3V0ZM10.9 0H12.7V1H10.9V0ZM14.5 0H16.3V1H14.5V0ZM18.1 0H19V1H18.1V0Z" fill="white"/>
+                             </svg>
+                             <ul class="list">
+                                 <li><div class="dot"></div><p class="fs-17">Initial Marketing Funded by Team</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">Pre Sale Round</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">DEX Listing on Raydium</p></li>
+                             </ul>
+                                 
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="box-roadmap top"> 
+                             <h5 class="title-box">Q3 2024</h5>
+                             <div class="icon"></div>
+                             <svg width="18" height="211" viewBox="0 0 18 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V0.995283L1 0.995283V0H0ZM0 2.98585V4.97641H1L1 2.98585H0ZM0 6.96698V8.95755H1V6.96698H0ZM0 10.9481V12.9387H1L1 10.9481H0ZM0 14.9292V16.9198H1L1 14.9292H0ZM0 18.9104V20.9009H1L1 18.9104H0ZM0 22.8915V24.8821H1L1 22.8915H0ZM0 26.8726V28.8632H1L1 26.8726H0ZM0 30.8538V32.8443H1L1 30.8538H0ZM0 34.8349V36.8255H1L1 34.8349H0ZM0 38.816V40.8066H1L1 38.816H0ZM0 42.7972L1.95773e-06 44.7877H1V42.7972H0ZM2.04474e-06 46.7783L2.13176e-06 48.7689H1L1 46.7783H2.04474e-06ZM2.21877e-06 50.7594L2.30578e-06 52.75H1V50.7594H2.21877e-06ZM2.39279e-06 54.7406L2.4798e-06 56.7311H1L1 54.7406H2.39279e-06ZM2.56681e-06 58.7217L2.65382e-06 60.7123H1V58.7217H2.56681e-06ZM2.74083e-06 62.7028L2.82784e-06 64.6934H1L1 62.7028H2.74083e-06ZM2.91485e-06 66.684L3.00186e-06 68.6745H1L1 66.684H2.91485e-06ZM3.08887e-06 70.6651L3.17588e-06 72.6556H1L1 70.6651H3.08887e-06ZM3.26289e-06 74.6462L3.3499e-06 76.6368H1L1 74.6462H3.26289e-06ZM3.43691e-06 78.6273L3.52392e-06 80.6179H1L1 78.6273H3.43691e-06ZM3.61093e-06 82.6085L3.69794e-06 84.599H1L1 82.6085H3.61093e-06ZM3.78495e-06 86.5896L3.87196e-06 88.5801H1V86.5896H3.78495e-06ZM3.95897e-06 90.5707L4.04598e-06 92.5613H1L1 90.5707H3.95897e-06ZM4.13299e-06 94.5518L4.22e-06 96.5424H1V94.5518H4.13299e-06ZM4.30701e-06 98.533L4.39402e-06 100.524H1L1 98.533H4.30701e-06ZM4.48103e-06 102.514L4.56804e-06 104.505H1V102.514H4.48103e-06ZM4.65505e-06 106.495L4.74206e-06 108.486H1L1 106.495H4.65505e-06ZM4.82907e-06 110.476L4.91608e-06 112.467H1V110.476H4.82907e-06ZM5.00309e-06 114.457L5.09011e-06 116.448H1.00001L1.00001 114.457H5.00309e-06ZM5.17711e-06 118.439L5.26413e-06 120.429H1.00001L1.00001 118.439H5.17711e-06ZM5.35114e-06 122.42L5.43815e-06 124.41H1.00001L1.00001 122.42H5.35114e-06ZM5.52516e-06 126.401L5.61217e-06 128.391H1.00001L1.00001 126.401H5.52516e-06ZM5.69918e-06 130.382L5.78619e-06 132.373H1.00001L1.00001 130.382H5.69918e-06ZM5.8732e-06 134.363L5.96021e-06 136.354H1.00001L1.00001 134.363H5.8732e-06ZM6.04722e-06 138.344L6.13423e-06 140.335H1.00001V138.344H6.04722e-06ZM6.22124e-06 142.325L6.30825e-06 144.316H1.00001L1.00001 142.325H6.22124e-06ZM6.39526e-06 146.307L6.48227e-06 148.297H1.00001V146.307H6.39526e-06ZM6.56928e-06 150.288L6.65629e-06 152.278H1.00001L1.00001 150.288H6.56928e-06ZM6.7433e-06 154.269L6.83032e-06 156.259H1.00001V154.269H6.7433e-06ZM6.91733e-06 158.25L7.00434e-06 160.241H1.00001L1.00001 158.25H6.91733e-06ZM7.09135e-06 162.231L7.17836e-06 164.222H1.00001L1.00001 162.231H7.09135e-06ZM7.26537e-06 166.212L7.35238e-06 168.203H1.00001L1.00001 166.212H7.26537e-06ZM7.43939e-06 170.193L7.5264e-06 172.184H1.00001L1.00001 170.193H7.43939e-06ZM7.61341e-06 174.175L7.70042e-06 176.165H1.00001L1.00001 174.175H7.61341e-06ZM7.78743e-06 178.156L7.87444e-06 180.146H1.00001L1.00001 178.156H7.78743e-06ZM7.96145e-06 182.137L8.04846e-06 184.127H1.00001L1.00001 182.137H7.96145e-06ZM8.13547e-06 186.118L8.22248e-06 188.109H1.00001L1.00001 186.118H8.13547e-06ZM8.3095e-06 190.099L8.39651e-06 192.09H1.00001V190.099H8.3095e-06ZM8.48352e-06 194.08L8.57053e-06 196.071H1.00001L1.00001 194.08H8.48352e-06ZM8.65754e-06 198.061L8.74455e-06 200.052H1.00001V198.061H8.65754e-06ZM8.83156e-06 202.042L8.91857e-06 204.033H1.00001L1.00001 202.042H8.83156e-06ZM9.00558e-06 206.024L9.09259e-06 208.014H1.00001V206.024H9.00558e-06ZM1.00001 210.005H0.9V210H0V211H0.9H1.00001V210.005ZM2.7 211H4.5V210H2.7V211ZM6.3 211H8.1V210H6.3V211ZM9.9 211H11.7V210H9.9V211ZM13.5 211H15.3V210H13.5V211ZM17.1 211H18V210H17.1V211Z" fill="white"/>
+                             </svg>
+                             <ul class="list">
+                                 <li><div class="dot"></div><p class="fs-17">DAO - Platform Launch</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">Marketing & Advertising</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">List on Coingecko</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">List on Coingecko</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">Listing on Major Centralised Exchanges</p></li>
+                             </ul>
+                                 
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="box-roadmap bottom"> 
+                             <h5 class="title-box">Q4 2024</h5>
+                             <div class="icon"></div>
+                             <svg width="19" height="211" viewBox="0 0 19 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 211V210.005L0 210.005V211H1ZM1 208.014L1 206.024H0V208.014H1ZM1 204.033V202.042H0V204.033H1ZM1 200.052L1 198.061H0V200.052H1ZM1 196.071L1 194.08H0V196.071H1ZM1 192.09L1 190.099H0V192.09H1ZM1 188.108L1 186.118H0V188.108H1ZM1 184.127L1 182.137H0V184.127H1ZM1 180.146L1 178.156H0V180.146H1ZM1 176.165L1 174.175H0V176.165H1ZM1 172.184L1 170.193H0V172.184H1ZM1 168.203V166.212H1.95773e-06L0 168.203H1ZM1 164.222L1 162.231H2.13176e-06L2.04474e-06 164.222H1ZM1 160.241V158.25H2.30578e-06L2.21877e-06 160.241H1ZM1 156.259L1 154.269H2.4798e-06L2.39279e-06 156.259H1ZM1 152.278V150.288H2.65382e-06L2.56681e-06 152.278H1ZM1 148.297L1 146.307H2.82784e-06L2.74083e-06 148.297H1ZM1 144.316L1 142.325H3.00186e-06L2.91485e-06 144.316H1ZM1 140.335L1 138.344H3.17588e-06L3.08887e-06 140.335H1ZM1 136.354L1 134.363H3.3499e-06L3.26289e-06 136.354H1ZM1 132.373L1 130.382H3.52392e-06L3.43691e-06 132.373H1ZM1 128.392L1 126.401H3.69794e-06L3.61093e-06 128.392H1ZM1 124.41V122.42H3.87196e-06L3.78495e-06 124.41H1ZM1 120.429L1 118.439H4.04598e-06L3.95897e-06 120.429H1ZM1 116.448V114.458H4.22e-06L4.13299e-06 116.448H1ZM1 112.467L1 110.476H4.39402e-06L4.30701e-06 112.467H1ZM1 108.486V106.495H4.56804e-06L4.48103e-06 108.486H1ZM1 104.505L1 102.514H4.74206e-06L4.65505e-06 104.505H1ZM1 100.524V98.5331H4.91608e-06L4.82907e-06 100.524H1ZM1.00001 96.5425L1.00001 94.552H5.09011e-06L5.00309e-06 96.5425H1.00001ZM1.00001 92.5614L1.00001 90.5709H5.26413e-06L5.17711e-06 92.5614H1.00001ZM1.00001 88.5803L1.00001 86.5897H5.43815e-06L5.35114e-06 88.5803H1.00001ZM1.00001 84.5992L1.00001 82.6086H5.61217e-06L5.52516e-06 84.5992H1.00001ZM1.00001 80.618L1.00001 78.6275H5.78619e-06L5.69918e-06 80.618H1.00001ZM1.00001 76.6369L1.00001 74.6463H5.96021e-06L5.8732e-06 76.6369H1.00001ZM1.00001 72.6557V70.6652H6.13423e-06L6.04722e-06 72.6557H1.00001ZM1.00001 68.6746L1.00001 66.684H6.30825e-06L6.22124e-06 68.6746H1.00001ZM1.00001 64.6935V62.7029H6.48227e-06L6.39526e-06 64.6935H1.00001ZM1.00001 60.7123L1.00001 58.7218H6.65629e-06L6.56928e-06 60.7123H1.00001ZM1.00001 56.7312V54.7406H6.83032e-06L6.7433e-06 56.7312H1.00001ZM1.00001 52.75L1.00001 50.7595H7.00434e-06L6.91733e-06 52.75H1.00001ZM1.00001 48.7689L1.00001 46.7783H7.17836e-06L7.09135e-06 48.7689H1.00001ZM1.00001 44.7878L1.00001 42.7972H7.35238e-06L7.26537e-06 44.7878H1.00001ZM1.00001 40.8066L1.00001 38.8161H7.5264e-06L7.43939e-06 40.8066H1.00001ZM1.00001 36.8255L1.00001 34.8349H7.70042e-06L7.61341e-06 36.8255H1.00001ZM1.00001 32.8443L1.00001 30.8538H7.87444e-06L7.78743e-06 32.8443H1.00001ZM1.00001 28.8632L1.00001 26.8726H8.04846e-06L7.96145e-06 28.8632H1.00001ZM1.00001 24.8821L1.00001 22.8915H8.22248e-06L8.13547e-06 24.8821H1.00001ZM1.00001 20.9009V18.9104H8.39651e-06L8.3095e-06 20.9009H1.00001ZM1.00001 16.9198L1.00001 14.9292H8.57053e-06L8.48352e-06 16.9198H1.00001ZM1.00001 12.9386V10.9481H8.74455e-06L8.65754e-06 12.9386H1.00001ZM1.00001 8.9575L1.00001 6.96693H8.91857e-06L8.83156e-06 8.9575H1.00001ZM1.00001 4.97636V2.98579H9.09259e-06L9.00558e-06 4.97636H1.00001ZM9.1796e-06 0.995224H1.00001L1 1H1.9V0H1.00001H9.2231e-06L9.1796e-06 0.995224ZM3.7 0H5.5V1H3.7V0ZM7.3 0H9.1V1H7.3V0ZM10.9 0H12.7V1H10.9V0ZM14.5 0H16.3V1H14.5V0ZM18.1 0H19V1H18.1V0Z" fill="white"/>
+                             </svg>
+                             <ul class="list">
+                                 <li><div class="dot"></div><p class="fs-17">Public financing & Seed funding raised</p></li>
+                             </ul>
+                                 
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="box-roadmap top"> 
+                             <h5 class="title-box">Q4 2024</h5>
+                             <div class="icon"></div>
+                             <svg width="18" height="211" viewBox="0 0 18 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V0.995283L1 0.995283V0H0ZM0 2.98585V4.97641H1L1 2.98585H0ZM0 6.96698V8.95755H1V6.96698H0ZM0 10.9481V12.9387H1L1 10.9481H0ZM0 14.9292V16.9198H1L1 14.9292H0ZM0 18.9104V20.9009H1L1 18.9104H0ZM0 22.8915V24.8821H1L1 22.8915H0ZM0 26.8726V28.8632H1L1 26.8726H0ZM0 30.8538V32.8443H1L1 30.8538H0ZM0 34.8349V36.8255H1L1 34.8349H0ZM0 38.816V40.8066H1L1 38.816H0ZM0 42.7972L1.95773e-06 44.7877H1V42.7972H0ZM2.04474e-06 46.7783L2.13176e-06 48.7689H1L1 46.7783H2.04474e-06ZM2.21877e-06 50.7594L2.30578e-06 52.75H1V50.7594H2.21877e-06ZM2.39279e-06 54.7406L2.4798e-06 56.7311H1L1 54.7406H2.39279e-06ZM2.56681e-06 58.7217L2.65382e-06 60.7123H1V58.7217H2.56681e-06ZM2.74083e-06 62.7028L2.82784e-06 64.6934H1L1 62.7028H2.74083e-06ZM2.91485e-06 66.684L3.00186e-06 68.6745H1L1 66.684H2.91485e-06ZM3.08887e-06 70.6651L3.17588e-06 72.6556H1L1 70.6651H3.08887e-06ZM3.26289e-06 74.6462L3.3499e-06 76.6368H1L1 74.6462H3.26289e-06ZM3.43691e-06 78.6273L3.52392e-06 80.6179H1L1 78.6273H3.43691e-06ZM3.61093e-06 82.6085L3.69794e-06 84.599H1L1 82.6085H3.61093e-06ZM3.78495e-06 86.5896L3.87196e-06 88.5801H1V86.5896H3.78495e-06ZM3.95897e-06 90.5707L4.04598e-06 92.5613H1L1 90.5707H3.95897e-06ZM4.13299e-06 94.5518L4.22e-06 96.5424H1V94.5518H4.13299e-06ZM4.30701e-06 98.533L4.39402e-06 100.524H1L1 98.533H4.30701e-06ZM4.48103e-06 102.514L4.56804e-06 104.505H1V102.514H4.48103e-06ZM4.65505e-06 106.495L4.74206e-06 108.486H1L1 106.495H4.65505e-06ZM4.82907e-06 110.476L4.91608e-06 112.467H1V110.476H4.82907e-06ZM5.00309e-06 114.457L5.09011e-06 116.448H1.00001L1.00001 114.457H5.00309e-06ZM5.17711e-06 118.439L5.26413e-06 120.429H1.00001L1.00001 118.439H5.17711e-06ZM5.35114e-06 122.42L5.43815e-06 124.41H1.00001L1.00001 122.42H5.35114e-06ZM5.52516e-06 126.401L5.61217e-06 128.391H1.00001L1.00001 126.401H5.52516e-06ZM5.69918e-06 130.382L5.78619e-06 132.373H1.00001L1.00001 130.382H5.69918e-06ZM5.8732e-06 134.363L5.96021e-06 136.354H1.00001L1.00001 134.363H5.8732e-06ZM6.04722e-06 138.344L6.13423e-06 140.335H1.00001V138.344H6.04722e-06ZM6.22124e-06 142.325L6.30825e-06 144.316H1.00001L1.00001 142.325H6.22124e-06ZM6.39526e-06 146.307L6.48227e-06 148.297H1.00001V146.307H6.39526e-06ZM6.56928e-06 150.288L6.65629e-06 152.278H1.00001L1.00001 150.288H6.56928e-06ZM6.7433e-06 154.269L6.83032e-06 156.259H1.00001V154.269H6.7433e-06ZM6.91733e-06 158.25L7.00434e-06 160.241H1.00001L1.00001 158.25H6.91733e-06ZM7.09135e-06 162.231L7.17836e-06 164.222H1.00001L1.00001 162.231H7.09135e-06ZM7.26537e-06 166.212L7.35238e-06 168.203H1.00001L1.00001 166.212H7.26537e-06ZM7.43939e-06 170.193L7.5264e-06 172.184H1.00001L1.00001 170.193H7.43939e-06ZM7.61341e-06 174.175L7.70042e-06 176.165H1.00001L1.00001 174.175H7.61341e-06ZM7.78743e-06 178.156L7.87444e-06 180.146H1.00001L1.00001 178.156H7.78743e-06ZM7.96145e-06 182.137L8.04846e-06 184.127H1.00001L1.00001 182.137H7.96145e-06ZM8.13547e-06 186.118L8.22248e-06 188.109H1.00001L1.00001 186.118H8.13547e-06ZM8.3095e-06 190.099L8.39651e-06 192.09H1.00001V190.099H8.3095e-06ZM8.48352e-06 194.08L8.57053e-06 196.071H1.00001L1.00001 194.08H8.48352e-06ZM8.65754e-06 198.061L8.74455e-06 200.052H1.00001V198.061H8.65754e-06ZM8.83156e-06 202.042L8.91857e-06 204.033H1.00001L1.00001 202.042H8.83156e-06ZM9.00558e-06 206.024L9.09259e-06 208.014H1.00001V206.024H9.00558e-06ZM1.00001 210.005H0.9V210H0V211H0.9H1.00001V210.005ZM2.7 211H4.5V210H2.7V211ZM6.3 211H8.1V210H6.3V211ZM9.9 211H11.7V210H9.9V211ZM13.5 211H15.3V210H13.5V211ZM17.1 211H18V210H17.1V211Z" fill="white"/>
+                             </svg>
+                             <ul class="list">
+                                 <li><div class="dot"></div><p class="fs-17">Tracker DApp
+                                     </p></li>
+                                 <li><div class="dot"></div><p class="fs-17">Expansion of marketing Campaign</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">Website V2</p></li>
+                                 <li><div class="dot"></div><p class="fs-17">Expansion, More Exchange Listing & Marketing</p></li>
+                             </ul>
+                                 
+                         </div>
+                     </div>
+                     
+                 </div>
+             </div>
+             <div class="swiper-pagination"></div>
+         </div>
+     </div>
+ </div>
+</div>
+</section>  -->
+
+
+
+
+
+
+
+<!-- Section Team -->
+<!-- <section class="section-team team-8" id="team">
+ <div class="container">
+     <div class="row">
+         <div class="col-12">
+             <div class="flat-tabs">
+                 <ul class="menu-tab">
+                     <li class="active"><div class="image"><img src="assets/images/team-01.jpg" alt="ICOLand"></div></li>
+                     <li><div class="image"><img src="assets/images/tabt2.png" alt="ICOLand"></div></li>
+                     <li><div class="image"><img src="assets/images/team-v03.png" alt="ICOLand"></div></li>
+                     <li><div class="image"><img src="assets/images/team-v04.png" alt="ICOLand"></div></li>
+                     <li><div class="image"><img src="assets/images/team-v05.png" alt="ICOLand"></div></li>
+                 </ul>
+                 <div class="content-tab">
+                     <div class="content-inner">
+                            <div class="image">
+                                <img src="assets/images/team-v01.png" alt="ICOLand">
+                            </div>
+                            <div class="content">
+                                <div class="block-text">
+                                    <h3 class="heading">Executive Team</h3>
+                                    <p>Our team player alway finds effective ways to improve the product and process</p>
+                                </div>
+                                <div class="info">
+                                     <span class="icon-union-01"></span>
+                                     <span class="icon-union-02"></span>
+                                     <span class="icon-union-03"></span>
+                                     <span class="icon-union-04"></span>
+                                    <h4 class="name">Charlee Mangar</h4>
+                                    <p class="position">Co-founder & COO</p>
+                                    <p class="text">As Sneakerheadz is a members only club, holding one of our Genesis "OG" NFTs grants you access to exclusivity only we can provide.</p>
+                                    <ul class="list-social">
+                                        <li><span class="icon-twitter"></span></li>
+                                        <li><span class="icon-facebook"></span></li>
+                                        <li><span class="icon-place"></span></li>
+                                        <li><span class="icon-reddit"></span></li>
+                                    </ul>
+                                </div>
+                            </div>                                                         
+                     </div>
+                     <div class="content-inner">
+                         <div class="image">
+                             <img src="assets/images/tabt2.png" alt="ICOLand">
+                         </div>
+                         <div class="content">
+                             <div class="block-text">
+                                 <h3>Executive Team</h3>
+                                 <p>Our team player alway finds effective ways to improve the product and process</p>
+                             </div>
+                             <div class="info">
+                                  <span class="icon-union-01"></span>
+                                  <span class="icon-union-02"></span>
+                                  <span class="icon-union-03"></span>
+                                  <span class="icon-union-04"></span>
+                                 <h4 class="name">Charlee Mangar</h4>
+                                 <p class="position">Co-founder & COO</p>
+                                 <p class="text">As Sneakerheadz is a members only club, holding one of our Genesis "OG" NFTs grants you access to exclusivity only we can provide.</p>
+                                 <ul class="list-social">
+                                     <li><span class="icon-twitter"></span></li>
+                                     <li><span class="icon-facebook"></span></li>
+                                     <li><span class="icon-place"></span></li>
+                                     <li><span class="icon-reddit"></span></li>
+                                 </ul>
+                             </div>
+                         </div>                                                         
+                     </div>
+                     <div class="content-inner">
+                         <div class="image">
+                             <img src="assets/images/team-v03.png" alt="ICOLand">
+                         </div>
+                         <div class="content">
+                             <div class="block-text">
+                                 <h3>Executive Team</h3>
+                                 <p>Our team player alway finds effective ways to improve the product and process</p>
+                             </div>
+                             <div class="info">
+                                  <span class="icon-union-01"></span>
+                                  <span class="icon-union-02"></span>
+                                  <span class="icon-union-03"></span>
+                                  <span class="icon-union-04"></span>
+                                 <h4 class="name">Charlee Mangar</h4>
+                                 <p class="position">Co-founder & COO</p>
+                                 <p class="text">As Sneakerheadz is a members only club, holding one of our Genesis "OG" NFTs grants you access to exclusivity only we can provide.</p>
+                                 <ul class="list-social">
+                                     <li><span class="icon-twitter"></span></li>
+                                     <li><span class="icon-facebook"></span></li>
+                                     <li><span class="icon-place"></span></li>
+                                     <li><span class="icon-reddit"></span></li>
+                                 </ul>
+                             </div>
+                         </div>                                                         
+                     </div>
+                     <div class="content-inner">
+                         <div class="image">
+                             <img src="assets/images/team-v04.png" alt="ICOLand">
+                         </div>
+                         <div class="content">
+                             <div class="block-text">
+                                 <h3>Executive Team</h3>
+                                 <p>Our team player alway finds effective ways to improve the product and process</p>
+                             </div>
+                             <div class="info">
+                                  <span class="icon-union-01"></span>
+                                  <span class="icon-union-02"></span>
+                                  <span class="icon-union-03"></span>
+                                  <span class="icon-union-04"></span>
+                                 <h4 class="name">Charlee Mangar</h4>
+                                 <p class="position">Co-founder & COO</p>
+                                 <p class="text">As Sneakerheadz is a members only club, holding one of our Genesis "OG" NFTs grants you access to exclusivity only we can provide.</p>
+                                 <ul class="list-social">
+                                     <li><span class="icon-twitter"></span></li>
+                                     <li><span class="icon-facebook"></span></li>
+                                     <li><span class="icon-place"></span></li>
+                                     <li><span class="icon-reddit"></span></li>
+                                 </ul>
+                             </div>
+                         </div>                                                         
+                     </div>
+                     <div class="content-inner">
+                         <div class="image">
+                             <img src="assets/images/team-v05.png" alt="ICOLand">
+                         </div>
+                         <div class="content">
+                             <div class="block-text">
+                                 <h3>Executive Team</h3>
+                                 <p>Our team player alway finds effective ways to improve the product and process</p>
+                             </div>
+                             <div class="info">
+                                  <span class="icon-union-01"></span>
+                                  <span class="icon-union-02"></span>
+                                  <span class="icon-union-03"></span>
+                                  <span class="icon-union-04"></span>
+                                 <h4 class="name">Charlee Mangar</h4>
+                                 <p class="position">Co-founder & COO</p>
+                                 <p class="text">As Sneakerheadz is a members only club, holding one of our Genesis "OG" NFTs grants you access to exclusivity only we can provide.</p>
+                                 <ul class="list-social">
+                                     <li><span class="icon-twitter"></span></li>
+                                     <li><span class="icon-facebook"></span></li>
+                                     <li><span class="icon-place"></span></li>
+                                     <li><span class="icon-reddit"></span></li>
+                                 </ul>
+                             </div>
+                         </div>                                                         
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</section> -->
+<!-- End Section Team -->
+
+<!-- Section Faq -->
+<section class="section-faq style-2" id="FAQ">
+ <div class="container">
+     <div class="row">
+         <div class="col-xl-6 col-md-12">
+             <div class="faq__content">
+                 <div class="block-text">
+                     <h3 class="heading">Have Any Question? </h3>
+                     <p class="noto">This FAQ section aims to address some common questions about HippoSol.</p>
+                 </div>
+
+                 <div class="flat-tabs">
+                     <ul class="menu-tab">
+                         <li class="active"><h6>General</h6></li>
+                         <!-- <li><h6>Pre ICO & ICO</h6></li>
+                         <li><h6>Token</h6></li>
+                         <li><h6>Client</h6></li>
+                         <li><h6>Legal</h6></li> -->
+
+                     </ul>
+                     <div class="content-tab">
+                         <div class="content-inner flat-accordion">
+                             
+                             <div class="flat-toggle active">
+                                 <h6 class="toggle-title active">What are HippoSol goals?</h6>
+                                 <p class="toggle-content noto">Our primary goal is to create a fun and rewarding experience for our community. We aim to achieve this through:
+                                   <br/>* Building a strong and passionate community.
+                                   <br/>* Exploring engaging gameplay features.
+                                   <br/>* Offering a fast and smooth user experience on Solana.</p>
+                             </div>
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">What is the total supply of $Hippos tokens?</h6>
+                                 <p class="toggle-content noto">The total supply of $Hippos tokens is One Billion (1,000,000,000).</p>
+                             </div>
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">Where can I find more information about $HippoSol?</h6>
+                                 <p class="toggle-content noto">You can learn more about HippoSol through our socials (<a href="https://x.com/hippo_on_sol" target="_blank" rel="noopener noreferrer">Twitter</a> & <a href="https://t.me/hipposol" target="_blank" rel="noopener noreferrer">Telegram</a>).</p>
+                             </div>                                                       
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">Can I buy $Hippo tokens yet?</h6>
+                                 <p class="toggle-content noto">Hippos token pre sale will be kicking off on the 26th of April.</p>
+                             </div>                                                       
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">What are the use cases for $Hippos tokens?</h6>
+                                 <p class="toggle-content noto">$Hippos tokens are primarily a memecoin and their value is driven by market forces. We're exploring ways to integrate them with potential future gameplay features.</p>
+                             </div>                                                       
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">How can I join the HippoSol community?</h6>
+                                 <p class="toggle-content noto">We welcome you to join our vibrant community! Don’t forget to follow us on our socials.</p>
+                             </div>                                                       
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">Will there be community events?</h6>
+                                 <p class="toggle-content noto">Absolutely! We plan to host various community events like AMAs, contests, and more to keep things 
+                                     exciting.</p>
+                             </div>                                                       
+                                                                           
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">What blockchain is HippoSol built on?</h6>
+                                 <p class="toggle-content noto">HippoSol is built on the Solana blockchain, leveraging its high speed and low transaction fees.</p>
+                             </div>                                                       
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">Is HippoSol a safe investment?</h6>
+                                 <p class="toggle-content noto">HippoSol is a memecoin, and the value of its tokens is subject to market fluctuations and inherent risks. Please do your own research before investing. 
+
+                                 </p>
+                             </div>                                                       
+                         </div>
+                         <div class="content-inner flat-accordion">
+                             <div class="flat-toggle active">
+                                 <h6 class="toggle-title active">How can I track my order?</h6>
+                                 <p class="toggle-content noto">We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.</p>
+                             </div>
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">What is Shopi. return/exchange policy?</h6>
+                                 <p class="toggle-content noto">We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.</p>
+                             </div>
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">How can I track my order?</h6>
+                                 <p class="toggle-content noto">We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.</p>
+                             </div>
+                             <div class="flat-toggle">
+                                 <h6 class="toggle-title">How can I track my order?</h6>
+                                 <p class="toggle-content noto">We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.</p>
+                             </div>                                                       
+                         </div> 
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-xl-6 col-md-12">
+             <div class="faq__images">
+                 <!-- <img src="assets/images/faq.png" alt="ICOLand"> -->
+             </div>
+         </div>
+     </div>
+ </div>
+</section>
+
+
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        
+        
+        <body >
+            
+            
+            
+            <!-- MAGIC CURSOR -->
+            <div class="mouse-cursor cursor-outer"></div>
+            <div class="mouse-cursor cursor-inner"></div>
+            <!-- /MAGIC CURSOR -->
+            
+            <section class="comingsoon relativee">
+                <span class="close-button absoluute" onclick="closeModal()"> 
+                    <img src="assets/images/closebtn.svg" alt="ICOLand" style="width: 50px; padding-right: 30px; padding-top: 30px;">
+                </span>
+                <div class="container">
+                    <div class="row">
+                        <div class="main-comingsoon center">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/minifav.png" alt="ICOLand"></a>
+                            </div>
+                            <h3 class="heading zen">$Hippos token pre sale kicks off in</h3>
+                            <div class="js-countdown" data-countdown="2024-04-24T10:00:00"></div>
+                            <!-- <span class="js-countdown" data-timer="178250"></span> -->
+                            <p class="fs-15 zen">Join us on <a href="https://x.com/hippo_on_sol" target="_blank" rel="noopener noreferrer">Twitter</a> & <a href="https://t.me/hipposol" target="_blank" rel="noopener noreferrer">Telegram</a> to stay updated!</p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </section>
+         
+        </body>
+
+
+
+
+        <object type="text/html" data="popup.html" width="100%" height="100%"></object>
+
+    </div>
+</div>
+
+
+
+<!-- End Section Faq -->
+
+<!-- Section Join -->
+<!-- <section class="join-now" id="contact">
+ <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+             <div class="join-now__main">
+                 <h3>Join our Community</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sed pulvinar nisl amet, viverra nulla ut. Aliquet nunc justo, bibendum nisl varius fringilla odio eu. Ut et, nullam tristique at ultrices. Viverra eget ultrices risus risus massa adipiscing adipiscing. Integer tempus aliquam vitae urna, ipsum mattis hendrerit quam.</p>
+                 <div class="join-now__button">
+                     <a href="#" class="btn-action style-2"><span>JOIN COMMUNITY</span></a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</section> -->
+<!-- End Section Join -->
+
+<!-- Footer -->
+<footer class="footer style-1">
+ <div class="footer__top">
+     <div class="container">
+         <div class="row">
+             <div class="col-xl-7 col-md-12">
+                 <div class="content-left">
+                     <h5 class="fs-22">Don't miss out, Join us now!</h5>
+                     <!-- <p>Don’t hesitate to subscribe to latest news about ICo</p> -->
+
+                     <!-- <form action="#" id="subscribe-form">
+                         <input type="email" placeholder="Enter your email" required="" id="subscribe-email">
+                         <button class="btn-action style-2" type="submit" id="subscribe-button"> <span class="effect">SUBSCRIBE</span></button>
+                     </form> -->
+                 </div>
+             </div>
+             <div class="col-xl-5 col-md-12">
+                 <div class="content-right">
+                     <p class="noto">Don’t hesitate to join our vibrant community  </p>
+                     <ul class="list-social">
+                         
+                             <li>
+                                 <a href="https://t.me/hipposol" target="_blank" rel="noopener noreferrer">
+
+                                 <span class="icon-telegram"></span></a>
+                             </li> 
+                         
+                         
+                         
+                             <li>
+                                 <a href="https://x.com/hippo_on_sol" target="_blank" rel="noopener noreferrer">
+
+                                 <span class="icon-twitter"></span></a>
+                             </li> 
+                             
+                         
+                     </ul>
+                 </div>
+             </div>
+         </div>
+         <nav id="main-nav" class="main-nav ">
+             <ul id="menu-primary-menu" class="menu">
+                 
+
+                 <li class="menu-item menu-item-has-childrenn noto">
+                     <a href="#About">About Us</a>
+                     
+                 </li>
+
+                 <li class="menu-item menu-item-has-childrenn noto">
+                     <a href="#sales">Tokenomics</a>
+                     
+                 </li>
+                  
+                 <li class="menu-item menu-item-has-childrenn noto">
+                     <a href="#FAQ">FAQ</a>
+                      
+                 </li>
+                 <li class="menu-item menu-item-has-childrenn noto">
+                     <a href="#" onclick="openModal()">BUY $Hippos</a>
+                     <!-- <a href="./presale">BUY $Hippos</a> -->
+                   
+                 </li>
+             </ul>
+         </nav>
+     </div>
+ </div>
+ <div class="footer__bottom">
+     
+     <div class="container">
+         
+         <div class="row">
+             
+             <div class="col-md-12">
+                 
+                 <p>© 2024. All rights reserved by Hipposol </a></p>
+             </div>
+         </div>
+     </div>
+ </div>
+</footer>
+<!-- End Footer -->
+<a id="scroll-top"></a>
+  </div>
+   
+
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/count-down.js"></script>
+    <script src="app/js/aos.js"></script>
+    <script src="app/js/chart.js"></script>
+    <script src="app/js/swiper-bundle.min.js"></script>
+    <script src="app/js/swiper.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+      <script>
+        let  numberPercent = document.querySelectorAll('.countbar')
+        let getPercent = Array.from(numberPercent)
+            getPercent.map((items) => {
+                let startCount = 0
+                let progressBar = () => {
+                    startCount ++
+                    items.style.width = `${startCount}%`
+                    if(startCount == items.dataset.percentnumber) {
+                        clearInterval(stop)
+                    }
+                }
+                let stop = setInterval(() => {
+                    progressBar()
+                },25)
+            })
+            
+      </script>
+      <script>
+          const data1 = {
+            labels: [
+                'Pre sale',
+                'DEX / CEX Listing',
+                'Marketing' ,
+                'Airdrop' ,
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [60, 25, 10, 5 ],
+                backgroundColor: [
+                '#3D88FB',
+                '#5637C8',
+                '#3647C8',
+                '#00D199' 
+                ], 
+            }]
+        };
+
+        const config1 = {
+            type: 'doughnut',
+            data: data1,
+            width:240,
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: false // Hide legend
+                },
+                scales: {
+                    y: {
+                        display: false // Hide Y axis labels
+                    },
+                    x: {
+                        display: false // Hide X axis labels
+                    }
+                }   
+            }
+        };
+
+            const myChart1 = new Chart(
+            document.getElementById('myChart1'),
+            config1
+            );
+            const myChart2 = new Chart(
+            document.getElementById('myChart2'),
+            config1
+        );
+      </script>
+        
+      <script src="app/js/mouse.js"></script>
+
+      <script>
+        $(document).ready(function(){
+            $('.zen').magnificPopup({
+                type: 'inline',
+                midClick: true, // Allow opening popup on middle mouse click
+                mainClass: 'mfp-fade',
+                removalDelay: 300
+            });
+        });
+    </script>
+    
+
+
+
+
+
+
+    
+
+
+
+
+    <script>
+        function openModal() {
+            // Display the modal
+            document.getElementById('myModal').style.display = 'block';
+        }
+        
+        function closeModal() {
+            // Hide the modal
+            document.getElementById('myModal').style.display = 'none';
+        }
+        
+        // Close the modal when clicking outside the modal content
+        window.onclick = function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                closeModal(); // Use the new closeModal function
+            }
+        }
+    </script>
+    
+        
+    
+
+
+
+
+    <!-- <script>
+        document.addEventListener('click', function(event) {
+            var mobileButton = document.querySelector('.mobile-button');
+            var mainNav = document.querySelector('.main-nav');
+    
+            // Check if the clicked element is NOT the mobile button or a descendant of the main navigation
+            if (!mobileButton.contains(event.target) && !mainNav.contains(event.target)) {
+                // Close the menu
+                closeMenu();
+            }
+        });
+    
+        function closeMenu() {
+            // Your code to close the menu
+            // For example, if you have a function to toggle the menu, you can call it here
+            toggleMenu(); // Assuming you have a function named toggleMenu to toggle the menu
+        }
+    
+        function toggleMenu() {
+            // Your code to toggle the menu
+            // For example, if you are using a class to show/hide the menu, you can toggle that class here
+        }
+    </script> -->
+
+
+</body>
+</html>

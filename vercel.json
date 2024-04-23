@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/presale",
+        "destination": "/presale.html"
+      }
+    ]
+  }
+  
