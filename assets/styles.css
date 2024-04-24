@@ -46,7 +46,7 @@
 
 @media (min-width: 768px) {
   .js-countdown {
-    margin-bottom: 60px !important; /* Adjust as needed */
+    margin-bottom: 0px !important; /* Adjust as needed */
   }
 }
 
