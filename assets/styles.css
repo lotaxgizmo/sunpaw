@@ -1,28 +1,30 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?oe5mqk');
-  src:  url('fonts/icomoon.eot?oe5mqk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?oe5mqk') format('truetype'),
-    url('fonts/icomoon.woff?oe5mqk') format('woff'),
-    url('fonts/icomoon.svg?oe5mqk#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?oe5mqk");
+  src: url("fonts/icomoon.eot?oe5mqk#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?oe5mqk") format("truetype"),
+    url("fonts/icomoon.woff?oe5mqk") format("woff"),
+    url("fonts/icomoon.svg?oe5mqk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 @media only screen and (max-width: 767px) {
-.banner-top.style-2 .banner-top__sale .sale-content .countdown__timer .countdown__item {
-  margin-bottom: 50px !important;
-}
+  .banner-top.style-2
+    .banner-top__sale
+    .sale-content
+    .countdown__timer
+    .countdown__item {
+    margin-bottom: 50px !important;
+  }
 }
 
 .comingsoon .main-comingsoon .countdown__timer .countdown__item {
-  
   width: 18% !important;
 }
 
 .comingsoon .main-comingsoon .countdown__timer .countdown__item::before {
-   
   right: -18px !important;
 }
 
@@ -30,11 +32,11 @@
   height: auto !important;
 }
 
-.relativee{
+.relativee {
   position: relative;
 }
 
-.absoluute{
+.absoluute {
   position: absolute;
   right: 0;
   top: 0;
@@ -50,19 +52,18 @@
   }
 }
 
-.zen{
+.zen {
   font-family: "Zen Dots" !important;
   font-weight: 400 !important;
 }
 
-.overfloww{
+.overfloww {
   overflow: hidden !important;
 }
 
 .preloader {
   /* display: flex !important; */
 
-  
   width: 100vw !important;
   height: 100vh !important;
 }
@@ -76,17 +77,17 @@
   }
 }
 
-.ffont{
-font-size: 17px !important ;
+.ffont {
+  font-size: 17px !important ;
 }
 
 .rotating-object {
   width: auto; /* Adjust size as needed */
-  height: fit-content; /* Adjust size as needed */ 
+  height: fit-content; /* Adjust size as needed */
   animation: rotate 5s linear infinite; /* Adjust speed (5s) as needed */
 }
 
-.loaderr{
+.loaderr {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -95,39 +96,39 @@ font-size: 17px !important ;
   height: 100vh !important;
 }
 
-.margintopp{
+.margintopp {
   margin-top: 10px;
 }
 
-.picwidth{
+.picwidth {
   width: 200px !important;
 }
 
-.flexerr{
+.flexerr {
   align-items: center;
   display: flex;
   justify-content: space-around;
   margin-top: 32px;
 }
 
-.sale-content{
-  padding: 10px; 
-    margin-stop: -151px !important;
-  } 
+.sale-content {
+  padding: 10px;
+  margin-stop: -151px !important;
+}
 
-.textwidth{
+.textwidth {
   margin-top: 10px;
-  overflow-wrap: anywhere; 
+  overflow-wrap: anywhere;
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.top{
+.top {
   display: flex !important;
   flex-direction: row !important;
 }
 
-.banner-top{
+.banner-top {
   padding-bottom: 0px !important;
 }
 
@@ -144,47 +145,47 @@ font-size: 17px !important ;
   padding: 17px 10px 15px 10px;
 }
 
-.animated-progress{
-  width: 100% !important;   
+.animated-progress {
+  width: 100% !important;
 }
-.animated-progress span{ 
+.animated-progress span {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
 
-.menu-tab{
+.menu-tab {
   display: block !important;
 }
 
-.fs-16{
+.fs-16 {
   text-align: center;
 }
 
-.flexx{
+.flexx {
   display: flex;
   flex-direction: column;
-  
+
   /* align-items: center; */
-  
 }
 
-.ton{
+.ton {
   width: max-content !important;
 }
 
-.margintop{
+.margintop {
   margin-top: 40px !important;
   margin-bottom: 20px !important;
 }
 
-.bannerthing{
+.bannerthing {
   display: flex;
   flex-direction: column;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -1089,7 +1090,7 @@ font-size: 17px !important ;
 }
 .icon-roadmap:before {
   content: "\ea0c";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-minus:before {
   content: "\e954";
@@ -1370,19 +1371,19 @@ font-size: 17px !important ;
 }
 .icon-union-04:before {
   content: "\e91a";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-union-03:before {
   content: "\e91b";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-union-02:before {
   content: "\e91c";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-union-01:before {
   content: "\e91d";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-chase:before {
   content: "\e917";
@@ -1399,7 +1400,7 @@ font-size: 17px !important ;
 }
 .icon-bear-face:before {
   content: "\e901";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-bitcoin:before {
   content: "\e902";
@@ -1407,7 +1408,7 @@ font-size: 17px !important ;
 }
 .icon-brute:before {
   content: "\e903";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-card:before {
   content: "\e904";
@@ -1446,7 +1447,7 @@ font-size: 17px !important ;
 }
 .icon-pegasus:before {
   content: "\e90d";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-place:before {
   content: "\e90e";
@@ -1478,7 +1479,7 @@ font-size: 17px !important ;
 }
 .icon-wide:before {
   content: "\e915";
-  color: #c004de;
+  color: #ffef28;
 }
 .icon-youtobe:before {
   content: "\e916";

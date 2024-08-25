@@ -342,7 +342,7 @@
                     position: absolute;
                     top: 44%;
                     right: 14%;
-                    background: var(--primary-color);
+                    backgroundd: var(--primary-color);
                 }
                 &:nth-last-child(1) {
                     padding-right: 0;
@@ -391,7 +391,7 @@
         .sale-content {
             margin-top: -164px;
             padding: 24px 0 57px;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, rgba(119, 61, 191, 0.1) 0%, rgba(134, 53, 189, 0.1) 100%);
+            backgroundd: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, rgba(119, 61, 191, 0.1) 0%, rgba(134, 53, 189, 0.1) 100%);
             backdrop-filter: blur(100px);
             border-radius: 20px;
             text-align: center;
@@ -515,7 +515,7 @@
 
             span {
                 -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: #C004DE;
+                -webkit-text-stroke-color: #FFEF28;
                 -webkit-text-fill-color: rgb(0 0 0/0%);
             }
         }
@@ -569,7 +569,7 @@
         .sale-content {
             margin-top: -170px;
             padding: 26px 0 37px;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.1) 104.35%);
+            backgroundd: linear-gradient(90deg, rgba(186, 16, 16, 0.592) -1.52%, rgba(32, 215, 72, 0.1) 104.35%);
             backdrop-filter: blur(17px);
             text-align: center;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -660,7 +660,7 @@
 
 .banner-top.style-4 {
     padding: 189px 0 116px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./../../assets/images/background/bg-banner-top-4.jpg') no-repeat;
+    backgroundd: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./../../assets/images/background/bg-banner-top-4.jpg') no-repeat;
     background-size: cover;
     position: relative;
 
