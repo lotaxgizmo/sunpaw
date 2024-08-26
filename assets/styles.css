@@ -1485,3 +1485,14 @@
   content: "\e916";
   color: #fff;
 }
+
+.reversee {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .reversee {
+    flex-direction: row;
+  }
+}
