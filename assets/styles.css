@@ -1496,3 +1496,20 @@
     flex-direction: row;
   }
 }
+
+.linkcolor {
+  color: #ffef28; /* Default link color - your main site color */
+  text-decoration: none;
+}
+
+.linkcolor:hover {
+  color: #e6b800; /* Hover state - a slightly darker yellow/orange for interaction */
+}
+
+.linkcolor:active {
+  color: #ffcc00; /* Active state - a more vivid yellow to indicate clicking */
+}
+
+.linkcolor:visited {
+  color: #d4af37; /* Visited state - a golden shade to differentiate visited links */
+}
