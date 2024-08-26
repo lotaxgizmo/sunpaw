@@ -232,7 +232,7 @@ color: white !important;
     <h1 class="zen" >Presale Calculator</h1>
     <form id="tokenCalculator">
         <label class="noto" for="solanaAmount">Enter the amount of TRX:</label>
-        <input class="noto" type="number" id="solanaAmount" name="solanaAmount" step="any" required placeholder="SOL">
+        <input class="noto" type="number" id="solanaAmount" name="solanaAmount" step="any" required placeholder="TRX">
         <label class="noto margintopp" for="tokenAmount" >$PAW Amount:</label>
         <input class="noto" type="text" id="tokenAmount" name="tokenAmount" placeholder="PAW"> 
     </form>
@@ -244,10 +244,10 @@ color: white !important;
                             
                             <h6 class="textwidth" ></h1>
                             <!-- <img src="./assets/images/qr.jpg" alt="" class="picwidth"> -->
-                            <h6 class="textwidth noto" onclick="copyTextToClipboard('nillll')" >nillll</h6>
+                            <h6 class="textwidth noto" onclick="copyTextToClipboard('TBkqyc7DpKZvxQza5mdcjwSsWrWTo4i9VY')" >TBkqyc7DpKZvxQza5mdcjwSsWrWTo4i9VY</h6>
 
                             <div class="flexerr" style="margin-top: 0;">
-                                <a   class="btn-action noto style-2 ton" onclick="copyTextToClipboard('nillll')"><span>Copy Address</span></a>
+                                <a   class="btn-action noto style-2 ton" onclick="copyTextToClipboard('TBkqyc7DpKZvxQza5mdcjwSsWrWTo4i9VY')"><span>Copy Address</span></a>
                            </div>
 
                             <p class="textwidth noto" style="font-size: 14px; color: #c4c4c4 !important; font-weight: 400 !important;" >Note: Only send TRX from a TRON wallet, or other TRON compatible wallets.   </p>
@@ -301,6 +301,7 @@ color: white !important;
             <div class="col-xl-6 col-md-12">
                 <div class="sale-info">
                     <h5 class="heading zen">Sale Information</h5>
+                    <h5 class="heading" style="    font-size: 20px !important;">Pre-Sale Price: 1000 TRX = 2000 PAW </h5>
                     <div class="info-box">
                         <h5 class="title" style="    font-size: 20px !important;">Minimum Buy: 1,000 TRX </h5>
                         <!-- <p class="fs-17">28 JAN 2022 12:00 GMT</p> -->
@@ -310,7 +311,7 @@ color: white !important;
                         <!-- <p class="fs-17">14th Feb 2022 12:00 GMT</p> -->
                     </div>
                     <div class="info-box">
-                        <h5 class="title" style="    font-size: 20px !important;">Pre Sale Token Allocation: 600,000,000 PAW</h5>
+                        <h5 class="title" style="    font-size: 20px !important;">Pre Sale Token Allocation: 6,000,000,000 PAW</h5>
                         <!-- <p class="fs-17">1,550,000 </p> -->
                     </div>
                     <div class="info-box">
@@ -397,36 +398,63 @@ color: white !important;
       </script>
 
 <script>
-    document.getElementById('solanaAmount').addEventListener('input', function() {
-        var solanaAmount = parseFloat(this.value);
-        var tokenPriceInSolana = 6.666666666666667e-6; // Update this with the actual token price in Solana
-        var tokenAmount = solanaAmount / tokenPriceInSolana;
-        document.getElementById('tokenAmount').value = tokenAmount.toFixed(0);
-        
-        // Set text color based on solanaAmount
-        if(solanaAmount < 0.5 || solanaAmount > 500) {
-            this.classList.add('red-text');
-            this.classList.remove('black-text');
+    // Function to update text color based on amount
+    function updateTextColor(inputElement, amount, min, max) {
+        if (amount < min || amount > max) {
+            inputElement.classList.add('red-text');
+            inputElement.classList.remove('black-text');
         } else {
-            this.classList.add('black-text');
-            this.classList.remove('red-text');
+            inputElement.classList.add('black-text');
+            inputElement.classList.remove('red-text');
         }
+    }
+
+    // Function to handle bidirectional conversion and formatting
+    function updateAmounts(fromSolana) {
+        var tokenPriceInSolana = 0.5; // 1 token = 0.5 Solana
+
+        if (fromSolana) {
+            var solanaAmount = parseFloat(document.getElementById('solanaAmount').value);
+            if (!isNaN(solanaAmount)) {
+                var tokenAmount = solanaAmount / tokenPriceInSolana;
+                document.getElementById('tokenAmount').value = tokenAmount.toFixed(0); // No decimals for tokenAmount
+
+                // Set color based on solanaAmount (1000 SOL minimum, 1,000,000 SOL maximum)
+                updateTextColor(document.getElementById('solanaAmount'), solanaAmount, 1000, 1000000);
+                // Set color based on tokenAmount equivalent (2000 tokens minimum, 2,000,000 tokens maximum)
+                updateTextColor(document.getElementById('tokenAmount'), tokenAmount, 2000, 2000000);
+            }
+        } else {
+            var tokenAmount = parseFloat(document.getElementById('tokenAmount').value);
+            if (!isNaN(tokenAmount)) {
+                var solanaAmount = tokenAmount * tokenPriceInSolana;
+                document.getElementById('solanaAmount').value = solanaAmount.toFixed(6); // 6 decimals for solanaAmount
+
+                // Set color based on tokenAmount (2000 tokens minimum, 2,000,000 tokens maximum)
+                updateTextColor(document.getElementById('tokenAmount'), tokenAmount, 2000, 2000000);
+                // Set color based on solanaAmount equivalent (1000 SOL minimum, 1,000,000 SOL maximum)
+                updateTextColor(document.getElementById('solanaAmount'), solanaAmount, 1000, 1000000);
+            }
+        }
+    }
+
+    document.getElementById('solanaAmount').addEventListener('input', function() {
+        updateAmounts(true); // Update based on solana input
     });
 
     document.getElementById('tokenAmount').addEventListener('input', function() {
-        var tokenAmount = parseFloat(this.value);
-        var tokenPriceInSolana = 6.666666666666667e-6; // Update this with the actual token price in Solana
-        var solanaAmount = tokenAmount * tokenPriceInSolana;
-        document.getElementById('solanaAmount').value = solanaAmount.toFixed(0);
-        
-        // Set text color based on tokenAmount
-        
+        updateAmounts(false); // Update based on token input
     });
 
     document.getElementById('tokenCalculator').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
     });
 </script>
+
+
+
+
+
 
 
 
